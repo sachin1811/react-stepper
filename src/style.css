@@ -1,0 +1,42 @@
+.stepperContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepContainer {
+  position: relative;
+}
+
+.progressLine {
+  position: absolute;
+  height: 2px;
+  background: grey;
+  width: 0;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.stepWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stepItem {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.stepItem.active {
+  background-color: lightblue;
+}
